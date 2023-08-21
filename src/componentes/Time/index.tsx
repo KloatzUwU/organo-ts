@@ -9,7 +9,7 @@ interface TimeProps {
     colaboradores: iColaborador[]
 }
 
-const Time = ({ corSecundaria, corPrimaria, nome, colaboradores }:TimeProps) => {
+const Time = ({ corSecundaria, corPrimaria, nome, colaboradores}:TimeProps) => {
     const css = { backgroundColor: corSecundaria }
 
     return (
@@ -23,6 +23,7 @@ const Time = ({ corSecundaria, corPrimaria, nome, colaboradores }:TimeProps) => 
                         nome={colaborador.nome} 
                         cargo={colaborador.cargo} 
                         imagem={colaborador.imagem}
+                        data={colaborador.data}
                     />
                 )}
             </div>
